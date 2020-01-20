@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+
+.table {
+    width: 306px;
+    background: #ddd;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 3px;
+    display: grid;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.box {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #222;
+}
+.box:hover {
+    background: #f2f2f2;
+}
+
+.disable{
+    pointer-events:none;
+}
+
+.move {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.reset {
+    width: max-content;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid grey;
+    margin: 10px auto;
+    border-radius: 15px;
+    cursor: pointer;
+} 
+
+.center {
+    text-align: center;
+}
