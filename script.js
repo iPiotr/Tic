@@ -5,13 +5,17 @@ let round = 1;
 const table = [
     ['', '', ''],
     ['', '', ''],
+    ['', '', ''],
     ['', '', '']
 ];
 
 const combinations = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
     [0, 3, 6], [1, 4, 7], [2, 5, 8],
-    [0, 4, 8], [2, 4, 6]
+    [0, 4, 8], [2, 4, 6], [9, 10, 11],
+    [8, 9, 10], [11,7,3], [10, 6, 2],
+    [1, 5, 9], [4,5,6],[5,6,7],[1,2,3],
+    [1,6,11],[3,6,9],[0,5,10]
 ];
 
 
@@ -40,6 +44,8 @@ function pick(event) {
 function check() {
     const result = table.reduce((total, row) => total.concat(row));
     let winner = '';
+    console.log(table.reduce((total, row) => total.concat(row)));
+    
     let moves = {
         'fa-times': [],
         'fa-circle-o': []

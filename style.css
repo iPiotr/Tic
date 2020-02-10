@@ -3,10 +3,11 @@ body {
 }
 
 .table {
-    width: 306px;
+    width: 350px;
+    height: 306px;
     background: #ddd;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
     grid-gap: 3px;
     display: grid;
     border: 2px solid #ddd;
